@@ -1,0 +1,57 @@
+body {
+  font-family: Roboto;
+  font-size: 1rem;
+}
+
+.users {
+  min-height: 400px;
+  max-height: 400px;
+  overflow: auto;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+.user {
+  height: 3rem;
+  padding-left: 2.5rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+
+  .name {
+    padding-left: 1rem;
+  }
+
+  img {
+    height: 2rem;
+    border-radius: 50%;
+  }
+
+  &.selected {
+    background-color: #efeded;
+  }
+}
+
+.operations {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  button {
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.users::-webkit-scrollbar {
+  width: 0.5em;
+}
+.users::-webkit-scrollbar-thumb {
+  background-color: #3f51b5;
+  height: 3rem;
+}
